@@ -14,3 +14,13 @@ class Data:
 
     def __getitem__(self, item):
         return self.data[item]
+
+
+def register_data(data):
+    global GLOBAL_DATA
+    GLOBAL_DATA = data
+
+
+def fetch_data():
+    global GLOBAL_DATA
+    return GLOBAL_DATA
